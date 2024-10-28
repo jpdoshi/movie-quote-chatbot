@@ -2,7 +2,7 @@ import os
 import json
 
 def read_quotes(file_path):
-  with open(file_path, 'r') as file:
+  with open(file_path, 'rb') as file:
     return json.load(file)
 
 def get_intents():
@@ -17,9 +17,7 @@ if __name__ == '__main__':
   intents = get_intents()
   
   for quote_dict in quotes:
-    index = quote_dict['index']
     quote = quote_dict['quote']
     movie = quote_dict['movie']
-    year  = quote_dict['year']
-
-    print(f'{index}\t{quote}\t{movie}\t{year}')
+    
+    print(quote, '\t', movie)
