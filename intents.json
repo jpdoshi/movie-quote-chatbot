@@ -1,0 +1,10 @@
+{
+  "intents": {
+    "greet": [
+      "hi", "hey", "hey there", "hello", "hello there", "good morning", "good afternoon", "good evening"
+    ],
+    "goodbye": ["bye", "goodbye", "see you", "later"],
+    "bot-challenge": ["who are you ?", "are you a bot ?", "are you a human ?", "how are you ?"],
+    "movie": ["which movie", "what movie"]
+  }
+}
